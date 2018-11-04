@@ -1,0 +1,452 @@
+[
+  {
+    "word": "graze",
+    "pronunciation": "グラッチェ",
+    "correct": "ありがとう",
+    "wrong1": "黒",
+    "wrong2": "王冠",
+    "wrong3": "海",
+    "remarks": ""
+  },
+  {
+    "word": "buongiorno",
+    "pronunciation": "ボンジョルノ",
+    "correct": "おはよう",
+    "wrong1": "美味しい",
+    "wrong2": "勝利",
+    "wrong3": "市場",
+    "remarks": ""
+  },
+  {
+    "word": "buonasera",
+    "pronunciation": "ボナセーラ",
+    "correct": "こんばんは",
+    "wrong1": "右",
+    "wrong2": "愛",
+    "wrong3": "優雅な",
+    "remarks": ""
+  },
+  {
+    "word": "ciao",
+    "pronunciation": "チャオ",
+    "correct": "やぁ",
+    "wrong1": "左",
+    "wrong2": "キス",
+    "wrong3": "しかし",
+    "remarks": ""
+  },
+  {
+    "word": "caldo",
+    "pronunciation": "カルド",
+    "correct": "熱い",
+    "wrong1": "まっすぐ",
+    "wrong2": "神",
+    "wrong3": "流星",
+    "remarks": ""
+  },
+  {
+    "word": "piacere",
+    "pronunciation": "ピアチェーレ",
+    "correct": "初めまして",
+    "wrong1": "顔",
+    "wrong2": "願い",
+    "wrong3": "乗馬",
+    "remarks": ""
+  },
+  {
+    "word": "prego",
+    "pronunciation": "プレーゴ",
+    "correct": "どうぞ",
+    "wrong1": "鮮やかな",
+    "wrong2": "あした",
+    "wrong3": "ビールジョッキ",
+    "remarks": ""
+  },
+  {
+    "word": "scusi",
+    "pronunciation": "スクィーズ",
+    "correct": "すみません",
+    "wrong1": "氷",
+    "wrong2": "隠れ家",
+    "wrong3": "豹（ひょう）",
+    "remarks": ""
+  },
+  {
+    "word": "per favore",
+    "pronunciation": "ペル　ファボーレ",
+    "correct": "おねがいします",
+    "wrong1": "ありがとう",
+    "wrong2": "リズミカル",
+    "wrong3": "海辺の",
+    "remarks": ""
+  },
+  {
+    "word": "ho capito",
+    "pronunciation": "オ　カピート",
+    "correct": "わかりました",
+    "wrong1": "おはよう",
+    "wrong2": "魅力的な人",
+    "wrong3": "音楽会",
+    "remarks": ""
+  },
+  {
+    "word": "va bene",
+    "pronunciation": "ヴァ　ベーネ",
+    "correct": "いいですよ",
+    "wrong1": "こんばんは",
+    "wrong2": "黒",
+    "wrong3": "王冠",
+    "remarks": ""
+  },
+  {
+    "word": "buonanotte",
+    "pronunciation": "ブォナノッテ",
+    "correct": "おやすみなさい",
+    "wrong1": "やぁ",
+    "wrong2": "美味しい",
+    "wrong3": "勝利",
+    "remarks": ""
+  },
+  {
+    "word": "come sta",
+    "pronunciation": "コメ　スタ",
+    "correct": "調子はどうですか？",
+    "wrong1": "熱い",
+    "wrong2": "右",
+    "wrong3": "愛",
+    "remarks": ""
+  },
+  {
+    "word": "cosi cosi?",
+    "pronunciation": "コズィ　コズィ",
+    "correct": "まあまあです",
+    "wrong1": "初めまして",
+    "wrong2": "左",
+    "wrong3": "キス",
+    "remarks": "問題全体の文字を大きく"
+  },
+  {
+    "word": "avanti",
+    "pronunciation": "アバンティ",
+    "correct": "先に",
+    "wrong1": "どうぞ",
+    "wrong2": "まっすぐ",
+    "wrong3": "神",
+    "remarks": ""
+  },
+  {
+    "word": "caro",
+    "pronunciation": "カーロ",
+    "correct": "高価な",
+    "wrong1": "すみません",
+    "wrong2": "顔",
+    "wrong3": "願い",
+    "remarks": ""
+  },
+  {
+    "word": "evviva",
+    "pronunciation": "エッヴィーヴァ",
+    "correct": "乾杯",
+    "wrong1": "おねがいします",
+    "wrong2": "鮮やかな",
+    "wrong3": "あした",
+    "remarks": ""
+  },
+  {
+    "word": "astro",
+    "pronunciation": "アストロ",
+    "correct": "星",
+    "wrong1": "わかりました",
+    "wrong2": "氷",
+    "wrong3": "隠れ家",
+    "remarks": ""
+  },
+  {
+    "word": "animo",
+    "pronunciation": "アニモ",
+    "correct": "精神",
+    "wrong1": "いいですよ",
+    "wrong2": "ありがとう",
+    "wrong3": "リズミカル",
+    "remarks": ""
+  },
+  {
+    "word": "appassionato",
+    "pronunciation": "アッパッスィオナート",
+    "correct": "情熱的な",
+    "wrong1": "おやすみなさい",
+    "wrong2": "おはよう",
+    "wrong3": "魅力的な人",
+    "remarks": "問題全体のフェードイン"
+  },
+  {
+    "word": "aurora",
+    "pronunciation": "アウローラ",
+    "correct": "夜明けの光",
+    "wrong1": "調子はどうですか？",
+    "wrong2": "こんばんは",
+    "wrong3": "黒",
+    "remarks": ""
+  },
+  {
+    "word": "lupo",
+    "pronunciation": "ルーポ",
+    "correct": "オオカミ",
+    "wrong1": "まあまあです",
+    "wrong2": "やぁ",
+    "wrong3": "美味しい",
+    "remarks": ""
+  },
+  {
+    "word": "mare",
+    "pronunciation": "マーレ",
+    "correct": "海",
+    "wrong1": "先に",
+    "wrong2": "熱い",
+    "wrong3": "右",
+    "remarks": ""
+  },
+  {
+    "word": "mercato",
+    "pronunciation": "メルカート",
+    "correct": "市場",
+    "wrong1": "高価な",
+    "wrong2": "初めまして",
+    "wrong3": "左",
+    "remarks": ""
+  },
+  {
+    "word": "grazioso",
+    "pronunciation": "グラツィオーゾ",
+    "correct": "優雅な",
+    "wrong1": "乾杯",
+    "wrong2": "どうぞ",
+    "wrong3": "まっすぐ",
+    "remarks": ""
+  },
+  {
+    "word": "pero",
+    "pronunciation": "ペロー",
+    "correct": "しかし",
+    "wrong1": "星",
+    "wrong2": "すみません",
+    "wrong3": "顔",
+    "remarks": "問題全体の文字を太くする"
+  },
+  {
+    "word": "meteora",
+    "pronunciation": "メテオーラ",
+    "correct": "流星",
+    "wrong1": "精神",
+    "wrong2": "おねがいします",
+    "wrong3": "鮮やかな",
+    "remarks": ""
+  },
+  {
+    "word": "ippica",
+    "pronunciation": "イッピカ",
+    "correct": "乗馬",
+    "wrong1": "情熱的な",
+    "wrong2": "わかりました",
+    "wrong3": "氷",
+    "remarks": ""
+  },
+  {
+    "word": "krug",
+    "pronunciation": "クルグ",
+    "correct": "ビールジョッキ",
+    "wrong1": "夜明けの光",
+    "wrong2": "いいですよ",
+    "wrong3": "ありがとう",
+    "remarks": ""
+  },
+  {
+    "word": "leopardo",
+    "pronunciation": "レオパルド",
+    "correct": "豹（ひょう）",
+    "wrong1": "オオカミ",
+    "wrong2": "おやすみなさい",
+    "wrong3": "おはよう",
+    "remarks": ""
+  },
+  {
+    "word": "litoraneo",
+    "pronunciation": "リトラーネオ",
+    "correct": "海辺の",
+    "wrong1": "海",
+    "wrong2": "調子はどうですか？",
+    "wrong3": "こんばんは",
+    "remarks": ""
+  },
+  {
+    "word": "concerto",
+    "pronunciation": "コンチェルト",
+    "correct": "音楽会",
+    "wrong1": "市場",
+    "wrong2": "まあまあです",
+    "wrong3": "やぁ",
+    "remarks": ""
+  },
+  {
+    "word": "corona",
+    "pronunciation": "コローナ",
+    "correct": "王冠",
+    "wrong1": "優雅な",
+    "wrong2": "先に",
+    "wrong3": "熱い",
+    "remarks": ""
+  },
+  {
+    "word": "debellazione",
+    "pronunciation": "デベッラッツィオーネ",
+    "correct": "勝利",
+    "wrong1": "しかし",
+    "wrong2": "高価な",
+    "wrong3": "初めまして",
+    "remarks": ""
+  },
+  {
+    "word": "amore",
+    "pronunciation": "アモーレ",
+    "correct": "愛",
+    "wrong1": "流星",
+    "wrong2": "乾杯",
+    "wrong3": "どうぞ",
+    "remarks": ""
+  },
+  {
+    "word": "bacio",
+    "pronunciation": "バッチオ",
+    "correct": "キス",
+    "wrong1": "乗馬",
+    "wrong2": "星",
+    "wrong3": "すみません",
+    "remarks": ""
+  },
+  {
+    "word": "dio",
+    "pronunciation": "ディーオ",
+    "correct": "神",
+    "wrong1": "ビールジョッキ",
+    "wrong2": "精神",
+    "wrong3": "おねがいします",
+    "remarks": ""
+  },
+  {
+    "word": "desiderio",
+    "pronunciation": "デスィデーリオ",
+    "correct": "願い",
+    "wrong1": "豹（ひょう）",
+    "wrong2": "情熱的な",
+    "wrong3": "わかりました",
+    "remarks": ""
+  },
+  {
+    "word": "domani",
+    "pronunciation": "ドマーニ",
+    "correct": "あした",
+    "wrong1": "海辺の",
+    "wrong2": "夜明けの光",
+    "wrong3": "いいですよ",
+    "remarks": ""
+  },
+  {
+    "word": "ricettacolo",
+    "pronunciation": "リチェッターコロ",
+    "correct": "隠れ家",
+    "wrong1": "音楽会",
+    "wrong2": "オオカミ",
+    "wrong3": "おやすみなさい",
+    "remarks": ""
+  },
+  {
+    "word": "ritmicita",
+    "pronunciation": "リトミチタ",
+    "correct": "リズミカル",
+    "wrong1": "王冠",
+    "wrong2": "海",
+    "wrong3": "調子はどうですか？",
+    "remarks": ""
+  },
+  {
+    "word": "rubacuori",
+    "pronunciation": "ルバクオーリ",
+    "correct": "魅力的な人",
+    "wrong1": "勝利",
+    "wrong2": "市場",
+    "wrong3": "まあまあです",
+    "remarks": ""
+  },
+  {
+    "word": "nero",
+    "pronunciation": "ネーロ",
+    "correct": "黒",
+    "wrong1": "愛",
+    "wrong2": "優雅な",
+    "wrong3": "先に",
+    "remarks": ""
+  },
+  {
+    "word": "buono",
+    "pronunciation": "ブゥオノ",
+    "correct": "美味しい",
+    "wrong1": "キス",
+    "wrong2": "しかし",
+    "wrong3": "高価な",
+    "remarks": ""
+  },
+  {
+    "word": "destra",
+    "pronunciation": "デストラ",
+    "correct": "右",
+    "wrong1": "神",
+    "wrong2": "流星",
+    "wrong3": "乾杯",
+    "remarks": "問題全体の書式を変える"
+  },
+  {
+    "word": "sinistra",
+    "pronunciation": "スィニストラ",
+    "correct": "左",
+    "wrong1": "願い",
+    "wrong2": "乗馬",
+    "wrong3": "星",
+    "remarks": ""
+  },
+  {
+    "word": "diritto",
+    "pronunciation": "ディリット",
+    "correct": "まっすぐ",
+    "wrong1": "あした",
+    "wrong2": "ビールジョッキ",
+    "wrong3": "精神",
+    "remarks": ""
+  },
+  {
+    "word": "viso",
+    "pronunciation": "ヴィーゾ",
+    "correct": "顔",
+    "wrong1": "隠れ家",
+    "wrong2": "豹（ひょう）",
+    "wrong3": "情熱的な",
+    "remarks": ""
+  },
+  {
+    "word": "vivace",
+    "pronunciation": "ヴィヴァーチェ",
+    "correct": "鮮やかな",
+    "wrong1": "リズミカル",
+    "wrong2": "海辺の",
+    "wrong3": "夜明けの光",
+    "remarks": ""
+  },
+  {
+    "word": "ghiaccio",
+    "pronunciation": "ギアッチョ",
+    "correct": "氷",
+    "wrong1": "魅力的な人",
+    "wrong2": "音楽会",
+    "wrong3": "オオカミ",
+    "remarks": "問題全体の文字の色を変える"
+  }
+]

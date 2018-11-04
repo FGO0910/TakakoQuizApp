@@ -1,0 +1,402 @@
+[
+  {
+    "word": "Obduracy",
+    "correct": "頑固",
+    "wrong1": "遺伝の",
+    "wrong2": "脈拍",
+    "wrong3": "油断のない",
+    "remarks": ""
+  },
+  {
+    "word": "Addictive",
+    "correct": "中毒性の",
+    "wrong1": "概要",
+    "wrong2": "換気",
+    "wrong3": "光学",
+    "remarks": ""
+  },
+  {
+    "word": "Diploma",
+    "correct": "卒業証書",
+    "wrong1": "小生意気な",
+    "wrong2": "震え声",
+    "wrong3": "頑固",
+    "remarks": ""
+  },
+  {
+    "word": "Eyelid",
+    "correct": "まぶた",
+    "wrong1": "悪意",
+    "wrong2": "杖",
+    "wrong3": "虹彩",
+    "remarks": ""
+  },
+  {
+    "word": "Foe",
+    "correct": "敵",
+    "wrong1": "しゃっくり",
+    "wrong2": "頑固",
+    "wrong3": "悪意",
+    "remarks": ""
+  },
+  {
+    "word": "Paltry",
+    "correct": "つまらない",
+    "wrong1": "杖",
+    "wrong2": "中毒性の",
+    "wrong3": "直感",
+    "remarks": ""
+  },
+  {
+    "word": "Pulse",
+    "correct": "脈拍",
+    "wrong1": "紙吹雪",
+    "wrong2": "遺伝の",
+    "wrong3": "脚注",
+    "remarks": ""
+  },
+  {
+    "word": "Relic",
+    "correct": "遺跡",
+    "wrong1": "敵",
+    "wrong2": "しゃっくり",
+    "wrong3": "実業家",
+    "remarks": ""
+  },
+  {
+    "word": "Syllabus",
+    "correct": "概要",
+    "wrong1": "すねる",
+    "wrong2": "忘却",
+    "wrong3": "熱意",
+    "remarks": ""
+  },
+  {
+    "word": "Testimony",
+    "correct": "証言",
+    "wrong1": "換気",
+    "wrong2": "実業家",
+    "wrong3": "無、零",
+    "remarks": ""
+  },
+  {
+    "word": "Ventilation",
+    "correct": "換気",
+    "wrong1": "中毒性の",
+    "wrong2": "警部補",
+    "wrong3": "強奪する",
+    "remarks": ""
+  },
+  {
+    "word": "Zenith",
+    "correct": "全盛",
+    "wrong1": "熱意",
+    "wrong2": "油断のない",
+    "wrong3": "憂鬱",
+    "remarks": ""
+  },
+  {
+    "word": "Slaughter",
+    "correct": "屠殺（とさつ）",
+    "wrong1": "台",
+    "wrong2": "さえずり",
+    "wrong3": "全盛",
+    "remarks": ""
+  },
+  {
+    "word": "Quiescent",
+    "correct": "静止した",
+    "wrong1": "綿毛",
+    "wrong2": "楕円",
+    "wrong3": "さえずり",
+    "remarks": "問題全体の文字を大きく"
+  },
+  {
+    "word": "Optics",
+    "correct": "光学",
+    "wrong1": "カワウソ",
+    "wrong2": "素直な",
+    "wrong3": "混乱",
+    "remarks": ""
+  },
+  {
+    "word": "Pedestal",
+    "correct": "台",
+    "wrong1": "内気な",
+    "wrong2": "紙吹雪",
+    "wrong3": "綿毛",
+    "remarks": ""
+  },
+  {
+    "word": "Oblivion",
+    "correct": "忘却",
+    "wrong1": "頂点",
+    "wrong2": "台",
+    "wrong3": "まぶた",
+    "remarks": ""
+  },
+  {
+    "word": "Malice",
+    "correct": "悪意",
+    "wrong1": "遺跡",
+    "wrong2": "つまらない",
+    "wrong3": "カワウソ",
+    "remarks": ""
+  },
+  {
+    "word": "Melancholy",
+    "correct": "憂鬱",
+    "wrong1": "震え声",
+    "wrong2": "やり",
+    "wrong3": "かま",
+    "remarks": ""
+  },
+  {
+    "word": "Lieutenant",
+    "correct": "警部補",
+    "wrong1": "男らしい",
+    "wrong2": "すねる",
+    "wrong3": "震え声",
+    "remarks": "問題全体の文字が動く"
+  },
+  {
+    "word": "Intuition",
+    "correct": "直感",
+    "wrong1": "混乱",
+    "wrong2": "小生意気な",
+    "wrong3": "空想",
+    "remarks": ""
+  },
+  {
+    "word": "Hereditary",
+    "correct": "遺伝の",
+    "wrong1": "憂鬱",
+    "wrong2": "光学",
+    "wrong3": "証言",
+    "remarks": ""
+  },
+  {
+    "word": "Footnote",
+    "correct": "脚注",
+    "wrong1": "外国人嫌い",
+    "wrong2": "無、零",
+    "wrong3": "静止した",
+    "remarks": ""
+  },
+  {
+    "word": "Entrepreneur",
+    "correct": "実業家",
+    "wrong1": "屠殺（とさつ）",
+    "wrong2": "まぶた",
+    "wrong3": "警部補",
+    "remarks": ""
+  },
+  {
+    "word": "Vigilant",
+    "correct": "油断のない",
+    "wrong1": "実業家",
+    "wrong2": "直感",
+    "wrong3": "小生意気な",
+    "remarks": ""
+  },
+  {
+    "word": "Turmoil",
+    "correct": "混乱",
+    "wrong1": "やり",
+    "wrong2": "空想",
+    "wrong3": "頂点",
+    "remarks": "問題全体の文字を太くする"
+  },
+  {
+    "word": "Apex",
+    "correct": "頂点",
+    "wrong1": "脚注",
+    "wrong2": "静止した",
+    "wrong3": "遺跡",
+    "remarks": ""
+  },
+  {
+    "word": "Bashful",
+    "correct": "内気な",
+    "wrong1": "油断のない",
+    "wrong2": "脚注",
+    "wrong3": "概要",
+    "remarks": ""
+  },
+  {
+    "word": "Confetti",
+    "correct": "紙吹雪",
+    "wrong1": "楕円",
+    "wrong2": "頂点",
+    "wrong3": "ねぐら",
+    "remarks": ""
+  },
+  {
+    "word": "Docile",
+    "correct": "素直な",
+    "wrong1": "光学",
+    "wrong2": "憂鬱",
+    "wrong3": "やり",
+    "remarks": ""
+  },
+  {
+    "word": "Ellipse",
+    "correct": "楕円",
+    "wrong1": "脈拍",
+    "wrong2": "卒業証書",
+    "wrong3": "おたふくかぜ",
+    "remarks": ""
+  },
+  {
+    "word": "Fluff",
+    "correct": "綿毛",
+    "wrong1": "頑固",
+    "wrong2": "混乱",
+    "wrong3": "紙吹雪",
+    "remarks": ""
+  },
+  {
+    "word": "Gusto",
+    "correct": "熱意",
+    "wrong1": "無、零",
+    "wrong2": "屠殺（とさつ）",
+    "wrong3": "遺伝の",
+    "remarks": ""
+  },
+  {
+    "word": "Hiccup",
+    "correct": "しゃっくり",
+    "wrong1": "全盛",
+    "wrong2": "綿毛",
+    "wrong3": "脈拍",
+    "remarks": ""
+  },
+  {
+    "word": "Iris",
+    "correct": "虹彩",
+    "wrong1": "卒業証書",
+    "wrong2": "おたふくかぜ",
+    "wrong3": "すねる",
+    "remarks": ""
+  },
+  {
+    "word": "Javelin",
+    "correct": "やり",
+    "wrong1": "つまらない",
+    "wrong2": "熱意",
+    "wrong3": "外国人嫌い",
+    "remarks": ""
+  },
+  {
+    "word": "Kiln",
+    "correct": "かま",
+    "wrong1": "おたふくかぜ",
+    "wrong2": "内気な",
+    "wrong3": "中毒性の",
+    "remarks": ""
+  },
+  {
+    "word": "Lair",
+    "correct": "ねぐら",
+    "wrong1": "忘却",
+    "wrong2": "かま",
+    "wrong3": "卒業証書",
+    "remarks": ""
+  },
+  {
+    "word": "Mumps",
+    "correct": "おたふくかぜ",
+    "wrong1": "証言",
+    "wrong2": "ねぐら",
+    "wrong3": "男らしい",
+    "remarks": ""
+  },
+  {
+    "word": "Nil",
+    "correct": "無、零",
+    "wrong1": "強奪する",
+    "wrong2": "外国人嫌い",
+    "wrong3": "つまらない",
+    "remarks": ""
+  },
+  {
+    "word": "Otter",
+    "correct": "カワウソ",
+    "wrong1": "かま",
+    "wrong2": "遺跡",
+    "wrong3": "屠殺（とさつ）",
+    "remarks": ""
+  },
+  {
+    "word": "Pert",
+    "correct": "小生意気な",
+    "wrong1": "空想",
+    "wrong2": "敵、仇",
+    "wrong3": "忘却",
+    "remarks": ""
+  },
+  {
+    "word": "Quaver",
+    "correct": "震え声",
+    "wrong1": "直感",
+    "wrong2": "全盛",
+    "wrong3": "しゃっくり",
+    "remarks": ""
+  },
+  {
+    "word": "Reverie",
+    "correct": "空想",
+    "wrong1": "ねぐら",
+    "wrong2": "証言",
+    "wrong3": "換気",
+    "remarks": ""
+  },
+  {
+    "word": "Sulk",
+    "correct": "すねる",
+    "wrong1": "静止した",
+    "wrong2": "概要",
+    "wrong3": "楕円",
+    "remarks": "問題全体の書式を変える"
+  },
+  {
+    "word": "Twitter",
+    "correct": "さえずり",
+    "wrong1": "素直な",
+    "wrong2": "男らしい",
+    "wrong3": "素直な",
+    "remarks": ""
+  },
+  {
+    "word": "Usurp",
+    "correct": "強奪する",
+    "wrong1": "警部補",
+    "wrong2": "悪意",
+    "wrong3": "敵、仇",
+    "remarks": ""
+  },
+  {
+    "word": "Virile",
+    "correct": "男らしい",
+    "wrong1": "さえずり",
+    "wrong2": "虹彩",
+    "wrong3": "内気な",
+    "remarks": ""
+  },
+  {
+    "word": "Wand",
+    "correct": "杖",
+    "wrong1": "虹彩",
+    "wrong2": "カワウソ",
+    "wrong3": "台",
+    "remarks": ""
+  },
+  {
+    "word": "Xenophobia",
+    "correct": "外国人嫌い",
+    "wrong1": "まぶた",
+    "wrong2": "強奪する",
+    "wrong3": "杖",
+    "remarks": "問題全体の文字の色を変える"
+  }
+]
