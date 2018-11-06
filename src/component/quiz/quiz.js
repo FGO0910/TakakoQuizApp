@@ -2,7 +2,7 @@
 /* eslint-disable no-nested-ternary */
 import React from 'react';
 import {
-  StyleSheet, Image, AsyncStorage, Animated, Platform,
+  StyleSheet, Image, AsyncStorage, Animated, Platform, View,
 } from 'react-native';
 import { Container, Text, Button } from 'native-base';
 import PropTypes from 'prop-types';
@@ -58,6 +58,7 @@ export default class QuizPage extends React.Component {
       correctId: 1,
       zoomAnim: new Animated.Value(40),
       moveAnim: new Animated.ValueXY({ x: -50, y: -50 }),
+      gauge: new Animated.Value(0),
       remarks: '',
     };
     this.Answer = this.answer.bind(this);
@@ -93,7 +94,7 @@ export default class QuizPage extends React.Component {
   answer = (num) => {
     const { navigation } = this.props;
     const {
-      timeLimit, questionCount, correctId, questionId,
+      timeLimit, questionCount, correctId, questionId, gauge,
     } = this.state;
     this.setState({ isAnswer: true });
     const str = questionId.toString();
@@ -102,6 +103,10 @@ export default class QuizPage extends React.Component {
     } else {
       this.storeData(str, '0');
     }
+    Animated.timing(gauge, {
+      toValue: 1,
+      duration: 0,
+    }).start();
     console.log(num);
     questionCount === 50
       ? setTimeout(() => {
@@ -112,7 +117,7 @@ export default class QuizPage extends React.Component {
 
   nextQuestion = () => {
     const {
-      questionCount, questionIdList, questions, zoomAnim, moveAnim,
+      questionCount, questionIdList, questions, zoomAnim, moveAnim, gauge,
     } = this.state;
     const randomId = Math.floor(Math.random() * questionIdList.length);
     const questionId = questionIdList[randomId];
@@ -151,6 +156,15 @@ export default class QuizPage extends React.Component {
         break;
       default:
     }
+    Animated.timing(gauge, {
+      toValue: 0,
+      duration: 0,
+    }).start();
+    Animated.timing(gauge, {
+      toValue: 1,
+      duration: 3000,
+    }).start();
+
     this.setState({
       question: questions[questionId].word,
       questionCount: questionCount + 1,
@@ -209,6 +223,7 @@ export default class QuizPage extends React.Component {
       correctId,
       zoomAnim,
       moveAnim,
+      gauge,
       remarks,
     } = this.state;
 
@@ -216,18 +231,59 @@ export default class QuizPage extends React.Component {
       console.log(moveAnim.getLayout());
       return (
         <Container style={{ paddingLeft: 10, paddingRight: 10 }}>
-          <Container style={{ flex: 1 }}>
+          <Container style={{ flex: 1, flexDirection: 'row' }}>
             <Text style={{ fontSize: 22 }}>
               {questionCount}
               /50問
             </Text>
+            <View style={{ flex: 1 }} />
+            <View style={{ flex: 1 }}>
+              <View
+                style={{
+                  borderWidth: 2,
+                  borderColor: 'black',
+                  flex: 1,
+                  flexDirection: 'row',
+                }}
+              >
+                <Animated.View style={{ flex: gauge, backgroundColor: 'black' }} />
+              </View>
+              <View style={{ flex: 1, flexDirection: 'row' }}>
+                <Text style={{}}>0</Text>
+                <View
+                  style={{
+                    flex: 1,
+                    justifyContent: 'flex-end',
+                    alignItems: 'flex-end',
+                  }}
+                >
+                  <Text style={{ flex: 1 }}>1</Text>
+                </View>
+                <View
+                  style={{
+                    flex: 1,
+                    justifyContent: 'flex-end',
+                    alignItems: 'flex-end',
+                  }}
+                >
+                  <Text style={{ flex: 1 }}>2</Text>
+                </View>
+                <View
+                  style={{
+                    flex: 1,
+                    justifyContent: 'flex-end',
+                    alignItems: 'flex-end',
+                  }}
+                >
+                  <Text style={{ flex: 1 }}>3</Text>
+                </View>
+              </View>
+            </View>
           </Container>
           <Container style={{ flex: 10 }}>
             <Container style={styles.question}>
               <Animated.View
-                style={
-                  remarks === '問題全体の文字が動く' ? moveAnim.getLayout() : null
-                }
+                style={remarks === '問題全体の文字が動く' ? moveAnim.getLayout() : null}
               >
                 <Animated.Text
                   style={{
