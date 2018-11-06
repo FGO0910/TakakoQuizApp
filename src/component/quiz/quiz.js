@@ -1,7 +1,9 @@
 /* eslint-disable no-unused-expressions */
 /* eslint-disable no-nested-ternary */
 import React from 'react';
-import { StyleSheet, Image, AsyncStorage } from 'react-native';
+import {
+  StyleSheet, Image, AsyncStorage, Animated, Platform,
+} from 'react-native';
 import { Container, Text, Button } from 'native-base';
 import PropTypes from 'prop-types';
 
@@ -54,6 +56,9 @@ export default class QuizPage extends React.Component {
       questionIdList: [...Array(50).keys()],
       answers: [],
       correctId: 1,
+      zoomAnim: new Animated.Value(40),
+      moveAnim: new Animated.ValueXY({ x: -50, y: -50 }),
+      remarks: '',
     };
     this.Answer = this.answer.bind(this);
     this.nextQuestion = this.nextQuestion.bind(this);
@@ -106,7 +111,9 @@ export default class QuizPage extends React.Component {
   };
 
   nextQuestion = () => {
-    const { questionCount, questionIdList, questions } = this.state;
+    const {
+      questionCount, questionIdList, questions, zoomAnim, moveAnim,
+    } = this.state;
     const randomId = Math.floor(Math.random() * questionIdList.length);
     const questionId = questionIdList[randomId];
     // 解答のリスト
@@ -127,14 +134,33 @@ export default class QuizPage extends React.Component {
       }
       answerList.splice(random, 1);
     }
+    // eslint-disable-next-line prefer-destructuring
+    const remarks = questions[questionId].remarks;
+    switch (remarks) {
+      case '問題全体の文字を大きく':
+        Animated.timing(zoomAnim, {
+          toValue: 60,
+          duration: 2000,
+        }).start();
+        break;
+      case '問題全体の文字が動く':
+        Animated.timing(moveAnim, {
+          toValue: { x: 50, y: 50 },
+          duration: 2000,
+        }).start();
+        break;
+      default:
+    }
     this.setState({
       question: questions[questionId].word,
       questionCount: questionCount + 1,
       questionId,
       isAnswer: false,
       answers,
+      remarks,
     });
     questionIdList.splice(randomId, 1);
+
     this.setTimer();
   };
 
@@ -175,10 +201,19 @@ export default class QuizPage extends React.Component {
 
   render() {
     const {
-      isLoading, questionCount, isAnswer, answers, question, correctId,
+      isLoading,
+      questionCount,
+      isAnswer,
+      answers,
+      question,
+      correctId,
+      zoomAnim,
+      moveAnim,
+      remarks,
     } = this.state;
 
     if (isLoading) {
+      console.log(moveAnim.getLayout());
       return (
         <Container style={{ paddingLeft: 10, paddingRight: 10 }}>
           <Container style={{ flex: 1 }}>
@@ -189,7 +224,25 @@ export default class QuizPage extends React.Component {
           </Container>
           <Container style={{ flex: 10 }}>
             <Container style={styles.question}>
-              <Text style={{ fontSize: 40 }}>{question}</Text>
+              <Animated.View
+                style={
+                  remarks === '問題全体の文字が動く' ? moveAnim.getLayout() : null
+                }
+              >
+                <Animated.Text
+                  style={{
+                    fontSize: remarks === '問題全体の文字を大きく' ? zoomAnim : 40,
+                    color: remarks === '問題全体の文字の色を変える' ? 'orange' : 'blue',
+                    fontWeight: remarks === '問題全体の文字を太くする' ? '900' : undefined,
+                    fontFamily:
+                      remarks === '問題全体の書式を変える'
+                        ? Platform.select({ ios: 'HiraMinProN-W3', android: 'serif' })
+                        : undefined,
+                  }}
+                >
+                  {question}
+                </Animated.Text>
+              </Animated.View>
             </Container>
             <Container style={{ flex: 1 }} />
             <Container style={{ flex: 8 }}>

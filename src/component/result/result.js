@@ -1,53 +1,39 @@
 import React from 'react';
-import { StyleSheet } from 'react-native';
-import {
-  Container, Item, Input, Text, Button,
-} from 'native-base';
+import { StyleSheet, Animated } from 'react-native';
+import { Container, Text, Button } from 'native-base';
 import PropTypes from 'prop-types';
 
-const styles = StyleSheet.create({
-  nameInput: {
-    flex: 2,
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: 40,
-  },
-  buttonArea: {
-    flex: 3,
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  button: {
-    width: 300,
-    height: 70,
-    backgroundColor: 'white',
-    borderRadius: 0,
-    borderWidth: 2,
-    borderColor: 'black',
-    margin: 10,
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  buttonText: {
-    color: 'black',
-    fontSize: 26,
-  },
-});
+export default class ResultPage extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { position: new Animated.ValueXY({ x: 100, y: 100 }) };
+  }
 
-const ResultPage = (props) => {
-  const { navigation } = props;
-  return (
-    <Container style={{ paddingLeft: 10, paddingRight: 10 }}>
-      <Text>解答結果</Text>
-    </Container>
-  );
-};
+  componentDidMount() {
+    const { position } = this.state;
+    Animated.timing(position, {
+      toValue: { x: 300, y: 500 },
+      duration: 3000,
+    }).start();
+  }
 
-ResultPage.propTypes = {
-  navigation: PropTypes.object.isRequired,
-};
-
-export default ResultPage;
+  render() {
+    const { position } = this.state;
+    return (
+      <Container style={{ paddingLeft: 10, paddingRight: 10 }}>
+        <Animated.Text
+          style={
+            ({
+              width: 250,
+              height: 50,
+              backgroundColor: 'powderblue',
+            },
+            position.getLayout())
+          }
+        >
+          解答結果
+        </Animated.Text>
+      </Container>
+    );
+  }
+}
