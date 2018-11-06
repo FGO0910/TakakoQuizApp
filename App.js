@@ -11,7 +11,7 @@ const MainScreenNavigator = createStackNavigator(
     Result: { screen: ResultPage },
   },
   {
-    initialRouteName: 'Top',
+    initialRouteName: 'Result',
     navigationOptions: {
       headerStyle: {
         borderBottomWidth: 0,
