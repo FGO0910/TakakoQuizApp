@@ -14,13 +14,14 @@ const styles = StyleSheet.create({
     height: 40,
   },
   buttonArea: {
+    flex: 3,
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
   },
   button: {
     width: 300,
-    height: 100,
+    height: 70,
     backgroundColor: 'white',
     borderRadius: 0,
     borderWidth: 2,
@@ -48,12 +49,19 @@ const TopPage = (props) => {
       </Container>
       <Container style={{ flex: 2 }}>
         <Container style={styles.buttonArea}>
-          <Button style={styles.button} onPress={() => navigation.navigate('Quiz')}>
+          <Button
+            style={styles.button}
+            onPress={() => navigation.navigate('Quiz', { language: 'english' })}
+          >
             <Text style={styles.buttonText}>英語</Text>
           </Button>
         </Container>
+        <Container style={{ flex: 1 }} />
         <Container style={styles.buttonArea}>
-          <Button style={styles.button} onPress={() => navigation.navigate('Quiz')}>
+          <Button
+            style={styles.button}
+            onPress={() => navigation.navigate('Quiz', { language: 'italian' })}
+          >
             <Text style={styles.buttonText}>イタリア語</Text>
           </Button>
         </Container>
