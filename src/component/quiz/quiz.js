@@ -107,7 +107,6 @@ export default class QuizPage extends React.Component {
       toValue: 1,
       duration: 0,
     }).start();
-    console.log(num);
     questionCount === 50
       ? setTimeout(() => {
         navigation.navigate('Result');
@@ -228,7 +227,6 @@ export default class QuizPage extends React.Component {
     } = this.state;
 
     if (isLoading) {
-      console.log(moveAnim.getLayout());
       return (
         <Container style={{ paddingLeft: 10, paddingRight: 10 }}>
           <Container style={{ flex: 1, flexDirection: 'row' }}>
