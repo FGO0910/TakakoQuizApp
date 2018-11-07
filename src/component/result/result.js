@@ -126,6 +126,30 @@ export default class ResultPage extends React.Component {
               <Text style={{ color: 'black' }}>もう一度やる</Text>
             </Button>
           </View>
+          <View
+            style={{
+              flex: 1,
+              flexDirection: 'row',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
+          >
+            <Button
+              style={{
+                flex: 1,
+                backgroundColor: 'white',
+                borderWidth: 2,
+                borderColor: 'black',
+                borderRadius: 0,
+                flexDirection: 'row',
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}
+              onPress={() => navigation.navigate('Top')}
+            >
+              <Text style={{ color: 'black' }}>トップに戻る</Text>
+            </Button>
+          </View>
         </View>
       </Container>
     );

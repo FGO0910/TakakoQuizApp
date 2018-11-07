@@ -6,7 +6,12 @@ import ResultPage from './src/component/result/result';
 
 const MainScreenNavigator = createStackNavigator(
   {
-    Top: { screen: TopPage },
+    Top: {
+      screen: TopPage,
+      navigationOptions: () => ({
+        headerLeft: null,
+      }),
+    },
     Quiz: {
       screen: QuizPage,
       navigationOptions: () => ({
