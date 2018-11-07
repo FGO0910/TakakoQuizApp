@@ -18,6 +18,7 @@ export default class ResultPage extends React.Component {
         this.setState({ correctCount: correctCount + 1 });
       }
     }
+    console.log(this.retrieveData('name'));
   }
 
   retrieveData = async (id) => {
