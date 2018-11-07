@@ -66,14 +66,16 @@ export default class QuizPage extends React.Component {
     this.setTimer = this.setTimer.bind(this);
     this.clearTimer = this.clearTimer.bind(this);
     this.storeData = this.storeData.bind(this);
-    this.retrieveData = this.retrieveData.bind(this);
+    this.answerCountUp = this.answerCountUp.bind(this);
   }
 
   componentWillMount() {
     // 問題文の読み込み
     const { navigation } = this.props;
     const language = navigation.getParam('language');
-    console.log(language);
+
+    this.answerCountUp();
+
     if (language === 'english') {
       const questions = require('../../json/english.json');
       this.setState({ questions, isLoading: true });
@@ -81,6 +83,13 @@ export default class QuizPage extends React.Component {
       const questions = require('../../json/italian.json');
       this.setState({ questions, isLoading: true });
     }
+    this.setState({
+      questionCount: 0,
+      questionIdList: [...Array(50).keys()],
+      zoomAnim: new Animated.Value(40),
+      moveAnim: new Animated.ValueXY({ x: -50, y: -50 }),
+      gauge: new Animated.Value(0),
+    });
   }
 
   componentDidMount() {
@@ -94,14 +103,14 @@ export default class QuizPage extends React.Component {
   answer = (num) => {
     const { navigation } = this.props;
     const {
-      timeLimit, questionCount, correctId, questionId, gauge,
+      timeLimit, questionCount, correctId, questionId, gauge, answerCount,
     } = this.state;
     this.setState({ isAnswer: true });
     const str = questionId.toString();
     if (num === correctId) {
-      this.storeData(str, '1');
+      this.storeData(`${answerCount}-${str}`, '1');
     } else {
-      this.storeData(str, '0');
+      this.storeData(`${answerCount}-${str}`, '0');
     }
     Animated.timing(gauge, {
       toValue: 1,
@@ -116,7 +125,7 @@ export default class QuizPage extends React.Component {
 
   nextQuestion = () => {
     const {
-      questionCount, questionIdList, questions, zoomAnim, moveAnim, gauge,
+      questionIdList, questions, zoomAnim, moveAnim, gauge,
     } = this.state;
     const randomId = Math.floor(Math.random() * questionIdList.length);
     const questionId = questionIdList[randomId];
@@ -166,7 +175,6 @@ export default class QuizPage extends React.Component {
 
     this.setState({
       question: questions[questionId].word,
-      questionCount: questionCount + 1,
       questionId,
       isAnswer: false,
       answers,
@@ -174,6 +182,7 @@ export default class QuizPage extends React.Component {
     });
     questionIdList.splice(randomId, 1);
 
+    this.increment();
     this.setTimer();
   };
 
@@ -195,10 +204,12 @@ export default class QuizPage extends React.Component {
     }
   };
 
-  retrieveData = async (id) => {
+  answerCountUp = async () => {
     try {
-      const value = await AsyncStorage.getItem(id);
-      console.log(value);
+      const value = await AsyncStorage.getItem('answerCount');
+      const answerCount = Number(value);
+      await AsyncStorage.setItem('answerCount', String(answerCount + 1));
+      this.setState({ answerCount: answerCount + 1 });
     } catch (error) {
       console.log(error);
     }
@@ -211,6 +222,12 @@ export default class QuizPage extends React.Component {
       console.log(error);
     }
   };
+
+  increment() {
+    this.setState(prevState => ({
+      questionCount: prevState.questionCount + 1,
+    }));
+  }
 
   render() {
     const {

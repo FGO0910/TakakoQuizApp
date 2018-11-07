@@ -1,5 +1,7 @@
 import React from 'react';
-import { StyleSheet, TextInput, AsyncStorage } from 'react-native';
+import {
+  StyleSheet, TextInput, AsyncStorage, Linking,
+} from 'react-native';
 import { Container, Text, Button } from 'native-base';
 import PropTypes from 'prop-types';
 
@@ -42,6 +44,10 @@ class TopPage extends React.Component {
     this.storeData = this.storeData.bind(this);
   }
 
+  componentDidMount() {
+    this.storeData('answerCount', '0');
+  }
+
   storeData = async (key, value) => {
     try {
       await AsyncStorage.setItem(key, value);
@@ -75,6 +81,7 @@ class TopPage extends React.Component {
               style={styles.button}
               onPress={() => {
                 this.storeData('name', name);
+                this.storeData('language', 'english');
                 navigation.navigate('Quiz', { language: 'english' });
               }}
             >
@@ -87,6 +94,7 @@ class TopPage extends React.Component {
               style={styles.button}
               onPress={() => {
                 this.storeData('name', name);
+                this.storeData('language', 'italian');
                 navigation.navigate('Quiz', { language: 'italian' });
               }}
             >
