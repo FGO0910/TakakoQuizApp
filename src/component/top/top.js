@@ -1,7 +1,5 @@
 import React from 'react';
-import {
-  StyleSheet, TextInput, AsyncStorage, Linking,
-} from 'react-native';
+import { StyleSheet, TextInput, AsyncStorage } from 'react-native';
 import { Container, Text, Button } from 'native-base';
 import PropTypes from 'prop-types';
 

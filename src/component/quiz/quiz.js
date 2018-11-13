@@ -6,6 +6,7 @@ import {
 } from 'react-native';
 import { Container, Text, Button } from 'native-base';
 import PropTypes from 'prop-types';
+import SoundPlayer from 'react-native-sound-player';
 
 const styles = StyleSheet.create({
   question: {
@@ -105,12 +106,30 @@ export default class QuizPage extends React.Component {
     const {
       timeLimit, questionCount, correctId, questionId, gauge, answerCount,
     } = this.state;
+    const language = navigation.getParam('language');
+
     this.setState({ isAnswer: true });
     const str = questionId.toString();
+    SoundPlayer.onFinishedPlaying((success) => {
+      console.log('finished playing', success);
+    });
     if (num === correctId) {
       this.storeData(`${answerCount}-${str}`, '1');
+      try {
+        // play the file tone.mp3
+        SoundPlayer.playSoundFile('quizCorrect', 'mp3');
+      } catch (e) {
+        console.log('cannot play the sound file', e);
+      }
+
     } else {
       this.storeData(`${answerCount}-${str}`, '0');
+      try {
+        // play the file tone.mp3
+        SoundPlayer.playSoundFile('quizWrong', 'mp3');
+      } catch (e) {
+        console.log('cannot play the sound file', e);
+      }
     }
     Animated.timing(gauge, {
       toValue: 1,
@@ -118,7 +137,7 @@ export default class QuizPage extends React.Component {
     }).start();
     questionCount === 50
       ? setTimeout(() => {
-        navigation.navigate('Result');
+        navigation.navigate('Result', { language });
       }, timeLimit)
       : setTimeout(this.nextQuestion, timeLimit);
   };
