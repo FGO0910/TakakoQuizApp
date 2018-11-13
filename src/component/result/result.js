@@ -105,6 +105,8 @@ export default class ResultPage extends React.Component {
   render() {
     const { correctCount } = this.state;
     const { navigation } = this.props;
+    const language = navigation.getParam('language');
+
     return (
       <Container style={{ paddingLeft: 10, paddingRight: 10 }}>
         <View
@@ -196,7 +198,9 @@ export default class ResultPage extends React.Component {
                 // リセットするんです
                 const resetAction = StackActions.reset({
                   index: 0,
-                  actions: [NavigationActions.navigate({ routeName: 'Quiz' })],
+                  actions: [
+                    NavigationActions.navigate({ routeName: 'Quiz', params: { language } }),
+                  ],
                 });
                 navigation.dispatch(resetAction);
               }}
